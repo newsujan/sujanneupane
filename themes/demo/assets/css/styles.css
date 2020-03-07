@@ -1,3 +1,93 @@
+/* Header */
+
+body{
+    padding: 0px;
+}
+/* Navbar */
+.navbar-right{
+    position: absolute;
+    right: 20vw;
+}
+.my-navbar-header{
+    font-size: 2em;
+}
+
+.half-screen{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.half-screen>p{
+    position: absolute;
+}
+
+.light, .uk-card-default{
+    background-color: #efefef;
+}
+.dark, .uk-card-secondary{
+    background-color: #000;
+}
+
+
+
+/* Homepage */
+.border{
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.dark .border {
+    color: #fff;
+    border: 1px solid #efefef;
+}
+.light .border {
+    color: #000;
+    border: 1px solid #000;
+}
+.icon-image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+}
+.icon-image:hover{
+    transform: scale(1.1);
+}
+
+.my-toggle{
+    position: absolute;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.my-toggle-text-right, .my-toggle-text-left{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.my-toggle-text-right{
+    width: 51vw;
+}
+.my-toggle-text-left{
+    width: 49vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
 #footer{
     text-align: center;
     position: fixed;
