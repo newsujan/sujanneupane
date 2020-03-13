@@ -53,9 +53,6 @@ body{
     height: 200px;
     background-position: center;
 }
-.icon-image:hover{
-    transform: scale(1.1);
-}
 
 .my-toggle{
     position: absolute;
@@ -92,4 +89,30 @@ body{
     text-align: center;
     position: fixed;
     bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media(max-width: 768px){
+    .dark-mobile{
+        background-color: #000;
+    }
+    .light-mobile{
+        background-color: #efefef;
+    }
+    .light-mobile .border {
+        color: #000 !important;
+        border: 1px solid #000 !important;
+    }
+    .dark-mobile .border {
+        color: #fff !important;
+        border: 1px solid #efefef !important;
+    }
 }
