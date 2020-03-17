@@ -115,4 +115,15 @@ body{
         color: #fff !important;
         border: 1px solid #efefef !important;
     }
+
+    .border{
+        width: 100vw;
+        height: 12.5vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .half-screen{
+        padding-left: 30px !important;
+    }
 }
