@@ -8,23 +8,134 @@ layout = "default"
     </div>
 </div> -->
 <style>
-#layout-nav{
-    display: none;
-}   
+    #layout-nav {
+        z-index: 0;
+        position: relative;
+    }
 </style>
 
-<div class="header">
-    <div class="uk-child-width-expand uk-text-center uk-flex" uk-grid>
-        <div class="half-screen uk-width-1-2@m light">
-            <div class="uk-animation-scale-up">
-                <a class="uk-link-reset" href="/">
-                    <img class="icon-image" src="{{ 'logo.png' | media }}" alt="icon-image"><br>
-                    <span class="my-navbar-header">sujanneupane.com.np</span>
-                </a>
+<!-- <div class="uk-container">
+    <div class="header">
+        <div class="uk-child-width-expand uk-text-center uk-flex" uk-grid>
+            <div class="half-screen uk-width-1-2@m light">
+                <div class="uk-animation-scale-up">
+                    <a class="uk-link-reset" href="/">
+                        <img class="icon-image" src="{{ 'logo.png' | media }}" alt="icon-image"><br>
+                        <span class="my-navbar-header">sujanneupane.com.np</span>
+                    </a>
+                </div>
+            </div>
+            <div class="half-screen uk-width-1-2@m uk-padding-remove dark uk-margin-remove">
+                <div class="my-card">
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="border"><a class="uk-link-reset"
+                                href="https://www.linkedin.com/in/sujan-neupane/">Linked In</a></div>
+                        <div class="border"><a class="uk-link-reset" href="https://instagram.com/newsujan">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="border"><a class="uk-link-reset" href="https://twitter.com/IamSujn">Twitter</a>
+                        </div>
+                        <div class="border"><a class="uk-link-reset" href="https://github.com/newsujan">Github</a></div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle my-toggle uk-visible@m" tabindex="0">
+                    <div
+                        class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up uk-padding-remove uk-margin-remove-right uk-animation-reverse">
+                        <span class="my-toggle-text-right my-navbar-header">Contact</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="half-screen uk-width-1-2@m uk-padding-remove dark uk-margin-remove">
-            <div class="my-card">
+        <div class="uk-child-width-expand@s uk-text-center uk-padding-remove uk-margin-remove-top" uk-grid>
+            <div class="half-screen uk-width-1-2@m dark light-mobile uk-padding-remove-left">
+                <div class="my-card">
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="border">Home</div>
+                        <div class="border">Protfolio</div>
+                    </div>
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="border">Contact</div>
+                        <div class="border">Info</div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle my-toggle uk-visible@m" tabindex="0">
+                    <div
+                        class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up uk-padding-remove uk-margin-remove-right uk-animation-reverse">
+                        <span class="my-toggle-text-left my-navbar-header">Protfolio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="half-screen uk-width-1-2@m uk-padding-remove uk-margin-remove-top light dark-mobile">
+                <div class="my-card">
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="border">Home</div>
+                        <div class="border">Protfolio</div>
+                    </div>
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="border">Contact</div>
+                        <div class="border">Info</div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle my-toggle uk-visible@m" tabindex="0">
+                    <div
+                        class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-padding-remove uk-margin-remove-right uk-animation-reverse">
+                        <span class="my-toggle-text-right my-navbar-header">Blog</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<br>
+<div class="uk-container homepage-content">
+    <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default light uk-card-hover uk-card-body">
+                
+                    <div class="uk-animation-scale-up">
+                        <a class=" half-screen uk-link-reset" href="/">
+                            <img class="icon-image" src="{{ 'logo.png' | media }}" alt="icon-image"><br>
+                            <span class="my-navbar-header">sujanneupane.com.np</span>
+                        </a>
+                    </div>
+                    
+            </div>
+        </div>
+        <div>
+            <div class="uk-card dark uk-card-secondary dark uk-card-hover uk-card-body">
+                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div class="border">
+                        <a class="uk-link-reset" href="https://www.linkedin.com/in/sujan-neupane/">
+                            <img class="social-icon" src="{{ 'social/linkedin.png' | media }}" alt="linkedin-icon">
+                            Linked In
+                        </a>
+                    </div>
+                    <div class="border">
+                        <a class="uk-link-reset" href="https://instagram.com/newsujan">
+                            <img class="social-icon" src="{{ '/social/instagram.png' | media }}" alt="instagram-icon">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div class="border">
+                        <a class="uk-link-reset" href="https://twitter.com/IamSujn">
+                            <img class="social-icon" src="{{ '/social/twitter.png' | media }}" alt="twitter-icon">
+                            Twitter
+                        </a>
+                    </div>
+                    <div class="border">
+                        <a class="uk-link-reset" href="https://github.com/newsujan">
+                            <img class="social-icon" src="{{ '/social/github.png' | media }}" alt="github-icon">
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary dark uk-card-hover uk-card-body">
                 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
                     <div class="border">Home</div>
                     <div class="border">Protfolio</div>
@@ -34,66 +145,12 @@ layout = "default"
                     <div class="border">Info</div>
                 </div>
             </div>
-            <div class="uk-animation-toggle my-toggle uk-visible@m" tabindex="0">
-                <div class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up uk-padding-remove uk-margin-remove-right uk-animation-reverse">
-                    <span class="my-toggle-text-right my-navbar-header">Contact</span>
-                </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default light uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">Blog</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
     </div>
-    <div class="uk-child-width-expand@s uk-text-center uk-padding-remove uk-margin-remove-top" uk-grid>
-        <div class="half-screen uk-width-1-2@m dark light-mobile">
-            <div class="my-card">
-                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="border">Home</div>
-                    <div class="border">Protfolio</div>
-                </div>
-                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="border">Contact</div>
-                    <div class="border">Info</div>
-                </div>
-            </div>
-            <div class="uk-animation-toggle my-toggle uk-visible@m" tabindex="0">
-                <div class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up uk-padding-remove uk-margin-remove-right uk-animation-reverse">
-                    <span class="my-toggle-text-left my-navbar-header">Protfolio</span>
-                </div>
-            </div>
-        </div>
-        <div class="half-screen uk-width-1-2@m uk-padding-remove uk-margin-remove-top light dark-mobile">
-            <div class="my-card">
-                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="border">Home</div>
-                    <div class="border">Protfolio</div>
-                </div>
-                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="border">Contact</div>
-                    <div class="border">Info</div>
-                </div>
-            </div>
-            <div class="uk-animation-toggle my-toggle uk-visible@m" tabindex="0">
-                <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-padding-remove uk-margin-remove-right uk-animation-reverse">
-                    <span class="my-toggle-text-right my-navbar-header">Blog</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="uk-child-width-expand uk-text-center uk-flex uk-margin-remove-top" uk-grid>
-        <div class="half-screen uk-width-1-2@m name">
-            <div>
-                <h2 class="uk-padding-large">sujanneupane.com.np</h2>
-            </div>
-        </div>
-        <div class="half-screen uk-width-1-2@m nav">
-           navbar
-        </div>
-    </div>
-    <div class="uk-child-width-expand@s uk-text-center uk-margin-remove-top" uk-grid>
-        <div class="half-screen uk-width-1-2@m info">
-            info
-        </div>
-        <div class="half-screen uk-width-1-2@m about">
-            about
-        </div>
-    </div> -->
 </div>
