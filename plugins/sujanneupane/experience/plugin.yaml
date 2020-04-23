@@ -1,0 +1,11 @@
+plugin:
+    name: 'sujanneupane.experience::lang.plugin.name'
+    description: 'sujanneupane.experience::lang.plugin.description'
+    author: sujanneupane
+    icon: oc-icon-child
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Experience
+        url: sujanneupane/experience/experience
+        icon: icon-life-ring

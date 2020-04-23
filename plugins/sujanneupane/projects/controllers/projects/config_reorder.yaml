@@ -1,0 +1,4 @@
+title: Projects
+modelClass: Sujanneupane\Projects\Models\Projects
+toolbar:
+    buttons: reorder_toolbar

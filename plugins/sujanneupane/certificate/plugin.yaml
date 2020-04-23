@@ -1,0 +1,11 @@
+plugin:
+    name: 'sujanneupane.certificate::lang.plugin.name'
+    description: 'sujanneupane.certificate::lang.plugin.description'
+    author: sujanneupane
+    icon: oc-icon-certificate
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Certificate
+        url: sujanneupane/certificate/certificate
+        icon: icon-certificate

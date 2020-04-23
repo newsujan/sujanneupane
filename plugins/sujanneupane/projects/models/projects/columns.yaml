@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: 'Project Name'
+        type: text
+    project:
+        label: 'Project Detail'
+        type: text

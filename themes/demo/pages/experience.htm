@@ -1,0 +1,58 @@
+title = "Experience"
+url = "/experience"
+layout = "default"
+is_hidden = 0
+
+[builderList experienceList]
+modelClass = "Sujanneupane\Experience\Models\Experience"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "position"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderDetails experienceDetails]
+modelClass = "Sujanneupane\Experience\Models\Experience"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "position"
+notFoundMessage = "Record not found"
+==
+{% set records = experienceList.records %}
+{% set displayColumn = experienceList.displayColumn %}
+{% set noRecordsMessage = experienceList.noRecordsMessage %}
+{% set detailsPage = experienceList.detailsPage %}
+{% set detailsKeyColumn = experienceList.detailsKeyColumn %}
+{% set detailsUrlParameter = experienceList.detailsUrlParameter %}
+
+
+<div class="uk-container page-content">
+    <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+        
+        {% for record in records %}
+            <div>
+                {% if loop.index%2 == 1 %}
+                    <div class="uk-card uk-card-default light light-child uk-card-hover uk-card-body uk-text-center">
+                {% else %}
+                    <div class="uk-card dark uk-card-secondary dark dark-child uk-card-hover uk-card-body uk-text-center">
+                {% endif %}
+                        <h3 class="my-navbar-header">{{record.position}}</h3>
+                        <p>{{record.year}}</p>
+                </div>
+            </div>
+            <div>
+                {% if loop.index%2 == 1 %}
+                    <div class="uk-card dark uk-card-secondary dark dark-child uk-card-hover uk-card-body uk-text-center">
+                {% else %}
+                    <div class="uk-card uk-card-default light light-child uk-card-hover uk-card-body uk-text-center">
+                {% endif %}
+                        <h3 class="my-navbar-header">{{record.company}}</h3>
+                        <p>{{record.description}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </div>
+</div>

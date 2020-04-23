@@ -1,0 +1,10 @@
+name: Certificate
+form: $/sujanneupane/certificate/models/certificate/fields.yaml
+modelClass: Sujanneupane\Certificate\Models\Certificate
+defaultRedirect: sujanneupane/certificate/certificate
+create:
+    redirect: 'sujanneupane/certificate/certificate/update/:id'
+    redirectClose: sujanneupane/certificate/certificate
+update:
+    redirect: sujanneupane/certificate/certificate
+    redirectClose: sujanneupane/certificate/certificate

@@ -1,0 +1,7 @@
+columns:
+    position:
+        label: Position
+        type: text
+    company:
+        label: Company
+        type: text

@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: Name
+        type: text
+    detail:
+        label: Detail
+        type: text

@@ -1,0 +1,10 @@
+name: Projects
+form: $/sujanneupane/projects/models/projects/fields.yaml
+modelClass: Sujanneupane\Projects\Models\Projects
+defaultRedirect: sujanneupane/projects/projects
+create:
+    redirect: 'sujanneupane/projects/projects/update/:id'
+    redirectClose: sujanneupane/projects/projects
+update:
+    redirect: sujanneupane/projects/projects
+    redirectClose: sujanneupane/projects/projects

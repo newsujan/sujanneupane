@@ -1,0 +1,58 @@
+title = "Projects"
+url = "/projects"
+layout = "default"
+is_hidden = 0
+
+[builderDetails projectsDetails]
+modelClass = "Sujanneupane\Projects\Models\Projects"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+
+[builderList projectsList]
+modelClass = "Sujanneupane\Projects\Models\Projects"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = projectsList.records %}
+{% set displayColumn = projectsList.displayColumn %}
+{% set noRecordsMessage = projectsList.noRecordsMessage %}
+{% set detailsPage = projectsList.detailsPage %}
+{% set detailsKeyColumn = projectsList.detailsKeyColumn %}
+{% set detailsUrlParameter = projectsList.detailsUrlParameter %}
+
+
+<div class="uk-container page-content">
+    <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+        
+        {% for record in records %}
+            <div>
+                {% if loop.index%2 == 1 %}
+                    <div class="uk-card uk-card-default light light-child uk-card-hover uk-card-body uk-text-center">
+                {% else %}
+                    <div class="uk-card dark uk-card-secondary dark dark-child uk-card-hover uk-card-body uk-text-center">
+                {% endif %}
+                        <h3 class="my-navbar-header">{{record.name}}</h3>
+                        <p>{{record.project}}</p>
+                </div>
+            </div>
+            <div>
+                {% if loop.index%2 == 1 %}
+                    <div class="uk-card dark uk-card-secondary dark dark-child uk-card-hover uk-card-body uk-text-center">
+                {% else %}
+                    <div class="uk-card uk-card-default light light-child uk-card-hover uk-card-body uk-text-center">
+                {% endif %}
+                        <h3 class="my-navbar-header">{{record.details}}</h3>
+                        <p>{{record.description}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </div>
+</div>

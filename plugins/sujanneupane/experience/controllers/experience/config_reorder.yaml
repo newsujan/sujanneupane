@@ -1,0 +1,4 @@
+title: Experience
+modelClass: Sujanneupane\Experience\Models\Experience
+toolbar:
+    buttons: reorder_toolbar

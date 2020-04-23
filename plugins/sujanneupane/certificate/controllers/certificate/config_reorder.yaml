@@ -1,0 +1,4 @@
+title: Certificate
+modelClass: Sujanneupane\Certificate\Models\Certificate
+toolbar:
+    buttons: reorder_toolbar

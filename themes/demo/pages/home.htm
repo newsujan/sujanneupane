@@ -7,12 +7,7 @@ layout = "default"
         {% content "welcome.htm" %}
     </div>
 </div> -->
-<style>
-    #layout-nav {
-        z-index: 0;
-        position: relative;
-    }
-</style>
+
 
 <!-- <div class="uk-container">
     <div class="header">
@@ -92,14 +87,14 @@ layout = "default"
     <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
         <div>
             <div class="uk-card uk-card-default light uk-card-hover uk-card-body">
-                
-                    <div class="uk-animation-scale-up">
-                        <a class=" half-screen uk-link-reset" href="/">
-                            <img class="icon-image" src="{{ 'logo.png' | media }}" alt="icon-image"><br>
-                            <span class="my-navbar-header">sujanneupane.com.np</span>
-                        </a>
-                    </div>
-                    
+
+                <div class="uk-animation-scale-up">
+                    <a class=" half-screen uk-link-reset" href="/">
+                        <img class="icon-image" src="{{ 'logo.png' | media }}" alt="icon-image"><br>
+                        <span class="my-navbar-header">sujanneupane.com.np</span>
+                    </a>
+                </div>
+
             </div>
         </div>
         <div>
@@ -137,19 +132,41 @@ layout = "default"
         <div>
             <div class="uk-card uk-card-secondary dark uk-card-hover uk-card-body">
                 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="border">Home</div>
-                    <div class="border">Protfolio</div>
+                    <a class="uk-link-reset" href="/experience">
+                        <div class="border">
+                            Experience
+                        </div>
+                    </a>
+                    <a class="uk-link-reset" href="/projects">
+                        <div class="border">
+                            Projects
+                        </div>
+                    </a>
                 </div>
                 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="border">Contact</div>
-                    <div class="border">Info</div>
+                    <a class="uk-link-reset" href="/certificate">
+                        <div class="border">
+                            Awards and Certificates
+                        </div>
+                    </a>
+                    <a class="uk-link-reset" href="/contact">
+                        <div class="border">
+                            Contact
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-default light uk-card-hover uk-card-body">
-                <h3 class="uk-card-title">Blog</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="uk-card uk-card-default light uk-card-hover uk-card-body uk-text-center">
+                <h3 class="uk-card-title" style="margin-top: 50px;">About Me</h3>
+                <p>Passionate learner and programmer with
+                    proven backgound in working in
+                    E-commerce business and Software
+                    Development. I have keen interest in Data
+                    Science and its application and aim to make
+                    a difference through my creative work and
+                    experience.</p>
             </div>
         </div>
     </div>

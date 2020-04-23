@@ -1,0 +1,12 @@
+list: $/sujanneupane/certificate/models/certificate/columns.yaml
+modelClass: Sujanneupane\Certificate\Models\Certificate
+title: Certificate
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'sujanneupane/certificate/certificate/update/:id'

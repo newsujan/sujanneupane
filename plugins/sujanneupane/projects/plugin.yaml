@@ -1,0 +1,11 @@
+plugin:
+    name: 'sujanneupane.projects::lang.plugin.name'
+    description: 'sujanneupane.projects::lang.plugin.description'
+    author: sujanneupane
+    icon: oc-icon-github
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Project
+        url: sujanneupane/projects/projects
+        icon: icon-github

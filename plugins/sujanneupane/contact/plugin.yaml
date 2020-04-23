@@ -1,0 +1,11 @@
+plugin:
+    name: 'sujanneupane.contact::lang.plugin.name'
+    description: 'sujanneupane.contact::lang.plugin.description'
+    author: sujanneupane
+    icon: oc-icon-phone
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Contact
+        url: sujanneupane/contact/contact
+        icon: icon-phone

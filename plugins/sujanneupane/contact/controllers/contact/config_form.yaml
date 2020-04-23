@@ -1,0 +1,10 @@
+name: Contact
+form: $/sujanneupane/contact/models/contact/fields.yaml
+modelClass: Sujanneupane\Contact\Models\Contact
+defaultRedirect: sujanneupane/contact/contact
+create:
+    redirect: 'sujanneupane/contact/contact/update/:id'
+    redirectClose: sujanneupane/contact/contact
+update:
+    redirect: sujanneupane/contact/contact
+    redirectClose: sujanneupane/contact/contact

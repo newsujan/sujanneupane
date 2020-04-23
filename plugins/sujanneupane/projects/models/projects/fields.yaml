@@ -1,0 +1,13 @@
+fields:
+    name:
+        label: 'Project Name'
+        span: auto
+        type: text
+    project:
+        label: 'Project Details'
+        span: auto
+        type: text
+    description:
+        label: 'Project Description'
+        span: auto
+        type: text
